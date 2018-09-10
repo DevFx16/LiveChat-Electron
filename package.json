@@ -1,0 +1,19 @@
+{
+  "name": "livechat",
+  "version": "1.0.0",
+  "description": "LiveChat Electron",
+  "main": "Index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FernanPro18/LiveChat-Electron.git"
+  },
+  "author": "Fernando Araujo <fernandoaraujo081@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FernanPro18/LiveChat-Electron/issues"
+  },
+  "homepage": "https://github.com/FernanPro18/LiveChat-Electron#readme"
+}
