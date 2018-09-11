@@ -2,9 +2,9 @@
   "name": "livechat",
   "version": "1.0.0",
   "description": "LiveChat Electron",
-  "main": "Js/Index.js",
+  "main": "Src/Js/Index.js",
   "scripts": {
-    "start": "electron Js/Index.js"
+    "start": "electron Src/Js/Index.js"
   },
   "repository": {
     "type": "git",
@@ -17,10 +17,12 @@
   },
   "homepage": "https://github.com/FernanPro18/LiveChat-Electron#readme",
   "dependencies": {
-    "electron": "^2.0.9",
     "semantic-ui": "^2.3.3"
   },
   "files": [
-    "**/*"
-  ]
+    "./Src"
+  ],
+  "devDependencies": {
+    "electron": "^2.0.9"
+  }
 }
