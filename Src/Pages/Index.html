@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <title>LiveChat</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"/>
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css"/>
     <link rel="stylesheet" type="text/css" href="../Styles/Body.css">
     <script>
         delete module.exports
@@ -13,12 +14,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
-    <script src="../semantic/dist/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
     <script src="../Js/Controllers/IndexController.js"></script>
+    <script src="../Js/Controllers/Usuarios.js"></script>
 </head>
 
 <body>
-    <div class="ui menu inverted mini" ng-controller="HeaderController">
+    <div class="ui menu inverted mini" ng-controller="HeaderController" ng-click="Mover()">
         <div class="item">
             <i class="comments icon"></i>
             LiveChat
@@ -33,6 +36,11 @@
             <button class="ui inverted red icon button" ng-click="Cerrar()">
                 <i class="times icon"></i>
             </button>
+        </div>
+    </div>
+    <div class="ui container">
+        <div ng-view>
+
         </div>
     </div>
 </body>

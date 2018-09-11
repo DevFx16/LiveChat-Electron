@@ -16,9 +16,7 @@
     "url": "https://github.com/FernanPro18/LiveChat-Electron/issues"
   },
   "homepage": "https://github.com/FernanPro18/LiveChat-Electron#readme",
-  "dependencies": {
-    "semantic-ui": "^2.3.3"
-  },
+  "dependencies": {},
   "files": [
     "./Src"
   ],
