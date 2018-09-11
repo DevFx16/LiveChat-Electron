@@ -1,33 +1,38 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" ng-app="App">
 
 <head>
     <meta charset="utf-8">
     <title>LiveChat</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="../Styles/Body.css">
     <script>
         delete module.exports
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
     <script src="../semantic/dist/semantic.min.js"></script>
+    <script src="../Js/Controllers/IndexController.js"></script>
 </head>
 
 <body>
-    <div class="ui menu">
+    <div class="ui menu inverted mini" ng-controller="HeaderController">
         <div class="item">
-            <div class="ui icon input">
-                <input type="text" placeholder="Search...">
-                <i class="search icon"></i>
-            </div>
+            <i class="comments icon"></i>
+            LiveChat
         </div>
-        <div class="right item">
-            <div class="ui action input">
-                <input type="text" placeholder="Navigate to...">
-                <div class="ui button">Go</div>
-            </div>
+        <div class="right menu">
+            <button class="ui inverted violet icon button" ng-click="Minimizar()">
+                <i class="minus icon"></i>
+            </button>
+            <button class="ui inverted violet icon button" ng-click="Maximizar()">
+                <i class="compress icon"></i>
+            </button>
+            <button class="ui inverted red icon button" ng-click="Cerrar()">
+                <i class="times icon"></i>
+            </button>
         </div>
     </div>
 </body>

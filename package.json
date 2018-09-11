@@ -4,7 +4,7 @@
   "description": "LiveChat Electron",
   "main": "Src/Js/Index.js",
   "scripts": {
-    "start": "electron Src/Js/Index.js"
+    "start": "electromon Src/Js/Index.js"
   },
   "repository": {
     "type": "git",
