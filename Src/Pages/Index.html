@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"/>
     <link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css"/>
-    <link rel="stylesheet" type="text/css" href="../Styles/Body.css">
+    <link rel="stylesheet" type="text/css" href="../Styles/Index.css">
     <script>
         delete module.exports
     </script>
@@ -21,19 +21,19 @@
 </head>
 
 <body>
-    <div class="ui menu inverted mini" ng-controller="HeaderController" ng-click="Mover()">
+    <div class="ui menu inverted mini" ng-controller="HeaderController" id="Frame">
         <div class="item">
             <i class="comments icon"></i>
             LiveChat
         </div>
         <div class="right menu">
-            <button class="ui inverted violet icon button" ng-click="Minimizar()">
+            <button class="ui inverted violet icon button" ng-click="Minimizar()" id="Boton">
                 <i class="minus icon"></i>
             </button>
-            <button class="ui inverted violet icon button" ng-click="Maximizar()">
+            <button class="ui inverted violet icon button" ng-click="Maximizar()" id="Boton">
                 <i class="compress icon"></i>
             </button>
-            <button class="ui inverted red icon button" ng-click="Cerrar()">
+            <button class="ui inverted red icon button" ng-click="Cerrar()" id="Boton">
                 <i class="times icon"></i>
             </button>
         </div>

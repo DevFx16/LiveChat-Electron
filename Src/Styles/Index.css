@@ -7,3 +7,12 @@ body{
     background:radial-gradient(ellipse at center, rgba(128,0,128,1) 0%, rgba(0,0,0,1) 100%); /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#800080', endColorstr='#000000',GradientType=1 ); /* ie6-9 */
   }
+
+  #Frame {
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+  }
+
+  #Boton {
+    -webkit-app-region: no-drag;
+  }

@@ -1,6 +1,6 @@
 angular.module('App', ['ngRoute', 'Usuarios'])
     .controller('HeaderController', function ($scope) {
-        const { remote, ipcRenderer } = require('electron');
+        const { remote } = require('electron');
 
         $scope.Minimizar = function () {
             remote.getCurrentWindow().minimize();
@@ -12,13 +12,6 @@ angular.module('App', ['ngRoute', 'Usuarios'])
 
         $scope.Cerrar = function () {
             remote.app.exit();
-        }
-
-        $scope.Mover = function (ev) {
-            ipcRenderer.send({
-                x: ev.x,
-                y: ev.y
-            })
         }
     })
     .config(function ($routeProvider, $locationProvider) {
