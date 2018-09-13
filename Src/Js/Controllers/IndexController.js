@@ -20,6 +20,11 @@ angular.module('App', ['ngRoute', 'Usuarios'])
             templateUrl: '../Pages/Login.html',
             controller: 'Usuarios'
         })
+            .when('/Registro', {
+                templateUrl: '../Pages/Registro.html',
+                controller: 'Usuarios'
+            })
+
             .otherwise({
                 redirectTo: '/Login'
             });
