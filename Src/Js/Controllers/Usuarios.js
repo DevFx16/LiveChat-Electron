@@ -17,14 +17,23 @@ angular.module('Usuarios', []).controller('Usuarios', function ($scope) {
             }
         });
 
-    $scope.Usuario = $('#Registro').form('get values');
-    $scope.UsuarioLogin = $('#Login').form('get values');
+    $scope.Load = 'ui dimmer';
 
     $scope.Registrar = function () {
-        console.log($scope.Usuario);
+        $scope.Usuario = $('#Registro').form('get values');
+        if($scope.Usuario.Nombre.length > 0 && $scope.Usuario.Email.length > 0 && $scope.Usuario.Password.length >= 6){
+            console.log('UIf');
+            $scope.Load = 'ui active dimmer';
+            return false;
+        }
     }
 
     $scope.Login = function () {
-        console.log($scope.UsuarioLogin);
+        $scope.UsuarioLogin = $('#Login').form('get values');
+        if($scope.UsuarioLogin.Email.length > 0 && $scope.UsuarioLogin.Password.length >= 6){
+            console.log('UIf');
+            $scope.Load = 'ui active dimmer';
+            return false;
+        }
     }
 })
